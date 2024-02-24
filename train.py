@@ -8,7 +8,8 @@ else:
 
 if __name__ == '__main__':
     # load a pretrained model (recommended for training)
-    model = YOLO("yolov8n.pt")
+    model = YOLO("yolov8m-oiv7.pt")
 
     # Use the model
-    results = model.train(data='coco128.yaml', epochs=10, imgsz=640)
+    results = model.train(data='coco128.yaml', epochs=100,
+                          imgsz=640)
